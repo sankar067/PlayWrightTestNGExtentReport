@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PlayWright TestNg Demo" parallel="methods" thread-count="3" verbose="1">
+    <listeners>
+        <listener class-name="org.example.extentConfig.ExtentReportListener"/>
+    </listeners>
+    <test name="TestSuite">
+        <classes>
+            <class name="org.example.TestCaseClass1"/>
+            <class name="org.example.TestCaseClass2"/>
+            <class name="org.example.TestCaseClass3"/>
+            <!-- Add more classes as needed -->
+        </classes>
+    </test>
+</suite>
